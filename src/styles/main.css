@@ -1,0 +1,106 @@
+html,
+body,
+#app {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+html.dark {
+    background: #121212;
+}
+
+main.dark {
+    background: #121212;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.data {
+    margin: 15px 0;
+}
+
+.summoner {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.champion {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 5px;
+}
+
+.champion img {
+    box-shadow: 0 2px 5px 0 rgb(0 16 75 / 20%);
+    margin: 0 12px;
+    width: 100px;
+}
+
+.synergie .champion img {
+    margin: 0;
+}
+
+.name {
+    font-size: 18px;
+    width: 75px;
+    display: block;
+}
+
+.bekad12 .champion img:nth-child(1),
+.arsonic91 .champion img:nth-child(1) {
+    margin-left: 0;
+}
+
+.content {
+    cursor: pointer;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.synergie .champion div:nth-child(even) {
+    margin-left: 6px;
+}
+
+.synergie .champion div:nth-child(odd) {
+    margin-right: 6px;
+}
+
+@media screen and (max-width: 600px) {
+    html,
+    body,
+    #app {
+        height: auto;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .bekad12,
+    .arsonic91,
+    .synergie {
+        width: 100%;
+        padding: 20px;
+    }
+    .champion img {
+        width: 80px;
+    }
+}
