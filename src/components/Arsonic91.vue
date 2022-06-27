@@ -7,31 +7,23 @@
       <div class="champion">
         <div>
           <a href="https://u.gg/lol/champions/thresh/build?role=support" target="blank">
-            <img
-              src="/img/Thresh.png"
-              alt
-            >
+            <img src="/img/Thresh.png" alt>
           </a>
           <span class="name">Thresh</span>
         </div>
+
         <div>
-          <a href="https://u.gg/lol/champions/leona/build?role=support" target="blank">
-            <img
-              src="/img/Leona.png"
-              alt
-            >
+          <a href="https://u.gg/lol/champions/nautilus/build?role=support" target="blank">
+            <img src="/img/nautilus.png" alt>
           </a>
-          <span class="name">Leona</span>
+          <span class="name">Nautilus</span>
         </div>
 
         <div>
-          <a href="https://u.gg/lol/champions/karma/build?role=support" target="blank">
-            <img
-              src="/img/Karma.png"
-              alt
-            >
+          <a href="https://u.gg/lol/champions/leona/build?role=support" target="blank">
+            <img src="/img/Leona.png" alt>
           </a>
-          <span class="name">Karma</span>
+          <span class="name">Leona</span>
         </div>
       </div>
     </div>
@@ -41,32 +33,21 @@
 
       <div class="champion">
         <div>
-          <a href="https://u.gg/lol/champions/nautilus/build?role=support" target="blank">
+          <a href="https://u.gg/lol/champions/karma/build?role=support" target="blank">
 
-            <img
-              src="/img/Nautilus.png"
-              alt
-            >
+            <img src="/img/Karma.png" alt>
           </a>
-          <span class="name">Nautilus</span>
+          <span class="name">Karma</span>
         </div>
         <div>
-          <a href="https://u.gg/lol/champions/lux/build?role=support" target="blank">
-
-            <img
-              src="/img/Lux.png"
-              alt
-            >
+          <a href="https://u.gg/lol/champions/blitzcrank/build?role=support" target="blank">
+            <img src="/img/Blitzcrank.png" alt>
           </a>
-          <span class="name">Lux</span>
+          <span class="name">Blitzcrank</span>
         </div>
         <div>
           <a href="https://u.gg/lol/champions/alistar/build?role=support" target="blank">
-
-            <img
-              src="/img/Alistar.png"
-              alt
-            >
+            <img src="/img/Alistar.png" alt>
           </a>
           <span class="name">Alistar</span>
         </div>
@@ -77,48 +58,40 @@
 
         <div class="champion">
           <div>
-            <a href="https://u.gg/lol/champions/xerath/build?role=support" target="blank">
+            <a href="https://u.gg/lol/champions/taric/build?role=support" target="blank">
 
-              <img
-                src="/img/Xerath.png"
-                alt
-              >
+              <img src="/img/Taric.png" alt>
             </a>
-            <span class="name">Xerath</span>
+            <span class="name">Taric</span>
           </div>
           <div>
-            <a href="https://u.gg/lol/champions/sona/build?role=support" target="blank">
-
-              <img
-                src="/img/Sona.png"
-                alt
-              >
+            <a href="https://u.gg/lol/champions/braum/?role=support" target="blank">
+              <img src="/img/Braum.png" alt>
             </a>
-            <span class="name">Sona</span>
+            <span class="name">Braum</span>
           </div>
           <div>
-            <a href="https://u.gg/lol/champions/lulu/build?role=support" target="blank">
-
-              <img
-                src="/img/Lulu.png"
-                alt
-              >
+            <a href="https://u.gg/lol/champions/lux/?role=support" target="blank">
+              <img src="/img/Lux.png" alt>
             </a>
-            <span class="name">Lulu</span>
+            <span class="name">Lux</span>
+          </div>
+          <div>
+            <a href="https://u.gg/lol/champions/brand/?role=support" target="blank">
+              <img src="/img/Brand.png" alt>
+            </a>
+            <span class="name">Brand</span>
           </div>
         </div>
 
-        <div class="data">
+        <!-- <div class="data">
           <h2>Pocket</h2>
 
           <div class="champion">
             <div>
               <a href="https://u.gg/lol/champions/Senna/build?role=support" target="blank">
 
-                <img
-                  src="/img/Senna.png"
-                  alt
-                >
+                <img src="/img/Senna.png" alt>
               </a>
               <span class="name">Senna</span>
             </div>
@@ -126,15 +99,13 @@
             <div>
               <a href="https://u.gg/lol/champions/ashe/build?role=support" target="blank">
 
-                <img
-                  src="/img/Ashe.png"
-                  alt
-                >
+                <img src="/img/Ashe.png" alt>
               </a>
               <span class="name">Ashe</span>
             </div>
           </div>
         </div>
+      </div> -->
       </div>
     </div>
   </div>

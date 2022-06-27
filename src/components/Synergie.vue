@@ -5,17 +5,11 @@
     <div class="data">
       <div class="champion">
         <div>
-          <img
-            src="/img/Draven.png"
-            alt
-          >
+          <img src="/img/Ashe.png" alt>
         </div>
 
         <div>
-          <img
-            src="/img/Thresh.png"
-            alt
-          >
+          <img src="/img/Thresh.png" alt>
         </div>
       </div>
     </div>
@@ -23,17 +17,11 @@
     <div class="data">
       <div class="champion">
         <div>
-          <img
-            src="/img/Ezreal.png"
-            alt
-          >
+          <img src="/img/Ezreal.png" alt>
         </div>
 
         <div>
-          <img
-            src="/img/Karma.png"
-            alt
-          >
+          <img src="/img/Karma.png" alt>
         </div>
       </div>
     </div>
@@ -41,17 +29,11 @@
     <div class="data">
       <div class="champion">
         <div>
-          <img
-            src="/img/Sivir.png"
-            alt
-          >
+          <img src="/img/Sivir.png" alt>
         </div>
 
         <div>
-          <img
-            src="/img/Leona.png"
-            alt
-          >
+          <img src="/img/Leona.png" alt>
         </div>
       </div>
     </div>
@@ -59,35 +41,11 @@
     <div class="data">
       <div class="champion">
         <div>
-          <img
-            src="/img/Caitlyn.png"
-            alt
-          >
+          <img src="/img/kaisa.png" alt>
         </div>
 
         <div>
-          <img
-            src="/img/Lux.png"
-            alt
-          >
-        </div>
-      </div>
-    </div>
-
-    <div class="data">
-      <div class="champion">
-        <div>
-          <img
-            src="/img/Seraphine.png"
-            alt
-          >
-        </div>
-
-        <div>
-          <img
-            src="/img/Senna.png"
-            alt
-          >
+          <img src="/img/nautilus.png" alt>
         </div>
       </div>
     </div>
