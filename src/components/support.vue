@@ -1,8 +1,8 @@
 <script setup>
 
 const tier1 = ["Thresh", "Nautilus", "Leona"];
-const tier2 = ["Karma", "Blitzcrank", "Alistar"];
-const tier3 = ["Taric", "Braum"];
+const tier2 = ["Karma", "Lux", "Renata"];
+const tier3 = ["Taric", "Brand", "Senna"];
 
 function link(i) {
   return 'https://u.gg/lol/champions/' + i + '/build?role=support'
