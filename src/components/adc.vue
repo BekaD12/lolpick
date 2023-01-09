@@ -27,7 +27,6 @@ function img(i) {
       </div>
     </div>
 
-
     <span class="tier">Tier 2</span>
     <div class="data">
       <div class="card" v-for="i in tier2" :key="i">
