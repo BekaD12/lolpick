@@ -15,43 +15,37 @@ function img(i) {
 
 
 <template>
-
   <div class="wrapper">
-
     <span class="role">support</span>
+
+    <span class="tier">Tier 1</span>
     <div class="data">
-      <h2>Tier 1</h2>
-      <div class="champion">
-        <div v-for="i in tier1" :key="i">
-          <a :href="link(i)" target="blank">
-            <img :src="img(i)">
-          </a>
-          <span class="name">{{ i }}</span>
-        </div>
+      <div class="card" v-for="i in tier1" :key="i">
+        <a :href="link(i)" target="blank">
+          <img :src="img(i)">
+        </a>
+        <span class="name">{{ i }}</span>
       </div>
     </div>
 
+
+    <span class="tier">Tier 2</span>
     <div class="data">
-      <h2>Tier 2</h2>
-      <div class="champion">
-        <div v-for="i in tier2" :key="i">
-          <a :href="link(i)" target="blank">
-            <img :src="img(i)">
-          </a>
-          <span class="name">{{ i }}</span>
-        </div>
+      <div class="card" v-for="i in tier2" :key="i">
+        <a :href="link(i)" target="blank">
+          <img :src="img(i)">
+        </a>
+        <span class="name">{{ i }}</span>
       </div>
     </div>
 
+    <span class="tier">Tier 3</span>
     <div class="data">
-      <h2>Tier 3</h2>
-      <div class="champion">
-        <div v-for="i in tier3" :key="i">
-          <a :href="link(i)" target="blank">
-            <img :src="img(i)">
-          </a>
-          <span class="name">{{ i }}</span>
-        </div>
+      <div class="card" v-for="i in tier3" :key="i">
+        <a :href="link(i)" target="blank">
+          <img :src="img(i)">
+        </a>
+        <span class="name">{{ i }}</span>
       </div>
     </div>
 

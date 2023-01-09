@@ -1,12 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+
+:root {
+    --background: #ebeef1;
+    --button: #000;
+    --button-color: #fff;
+    --button-radius: 1rem;
+    --card-background: #fff;
+    --item-active: #02a9ff;
+    --item-background: #edf1F5;
+    --item-hover: #d6e0ef;
+    --item-radius: .5rem;
+    --shadow: 0 0 2.5rem rgb(0 0 0 / 10%);
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    background-color: var(--background);
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+html.dark {
+    --background: #14181D;
+    --button: #fff;
+    --button-color: #000;
+    --card-background: #20232D;
+    --item-background: #20232D;
+    --item-hover: #f5f6fd;
+    color-scheme: dark;
+}
+
+html,
+body,
+#app {
+    font-family: 'Work Sans', sans-serif, -apple-system, blinkmacsystemfont, "Segoe UI", roboto, helvetica, arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    height: 100%;
+    letter-spacing: -.08rem;
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust: 100%;
+    word-spacing: .1rem;
+}
+
+
 main {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     padding: 2rem;
-    width: 1280px;
+    width: 128rem;
 }
 
-.champion {
+.wrapper {
+    padding: 1.5rem;
+}
+
+.role {
+    display: block;
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.tier {
+    display: block;
+    font-size: 2rem;
+}
+
+.data {
     display: flex;
     gap: 1rem;
+    margin-bottom: 2rem;
+    margin-top: .5rem;
+}
+
+.card {
+    align-items: center;
+    background: var(--card-background);
+    border-radius: var(--item-radius);
+    box-shadow: var(--shadow);
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    padding: 1.5rem 1.2rem;
+    position: relative;
+    transition: box-shadow .6s ease;
+    height: 8rem;
+}
+
+.card img {
+    border-radius: var(--item-radius);
+    box-shadow: var(--shadow);
+    height: 100%;
+    object-fit: cover;
+    width: 6.5rem;
+}
+
+.card .name {
+    display: block;
+    margin-left: 1rem;
 }

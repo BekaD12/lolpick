@@ -15,64 +15,58 @@ function img(i) {
 }
 </script>
 
-
 <template>
-
   <div class="wrapper">
+    <span class="role">synergie</span>
 
-    <span class="role">Synergie</span>
+    <span class="tier">Synergie 1</span>
     <div class="data">
-      <div class="champion">
-        <div v-for="i in synergie1" :key="i">
-          <a :href="link(i)" target="blank">
-            <img :src="img(i)">
-          </a>
-          <span class="name">{{ i }}</span>
-        </div>
+      <div class="card" v-for="i in synergie1" :key="i">
+        <a :href="link(i)" target="blank">
+          <img :src="img(i)">
+        </a>
+        <span class="name">{{ i }}</span>
       </div>
     </div>
 
+
+    <span class="tier">Synergie 2</span>
     <div class="data">
-      <div class="champion">
-        <div v-for="i in synergie2" :key="i">
-          <a :href="link(i)" target="blank">
-            <img :src="img(i)">
-          </a>
-          <span class="name">{{ i }}</span>
-        </div>
+      <div class="card" v-for="i in synergie2" :key="i">
+        <a :href="link(i)" target="blank">
+          <img :src="img(i)">
+        </a>
+        <span class="name">{{ i }}</span>
       </div>
     </div>
 
+    <span class="tier">Synergie 3</span>
     <div class="data">
-      <div class="champion">
-        <div v-for="i in synergie3" :key="i">
-          <a :href="link(i)" target="blank">
-            <img :src="img(i)">
-          </a>
-          <span class="name">{{ i }}</span>
-        </div>
+      <div class="card" v-for="i in synergie3" :key="i">
+        <a :href="link(i)" target="blank">
+          <img :src="img(i)">
+        </a>
+        <span class="name">{{ i }}</span>
       </div>
     </div>
 
+    <span class="tier">Synergie 4</span>
     <div class="data">
-      <div class="champion">
-        <div v-for="i in synergie4" :key="i">
-          <a :href="link(i)" target="blank">
-            <img :src="img(i)">
-          </a>
-          <span class="name">{{ i }}</span>
-        </div>
+      <div class="card" v-for="i in synergie4" :key="i">
+        <a :href="link(i)" target="blank">
+          <img :src="img(i)">
+        </a>
+        <span class="name">{{ i }}</span>
       </div>
     </div>
 
+    <span class="tier">Synergie 5</span>
     <div class="data">
-      <div class="champion">
-        <div v-for="i in synergie5" :key="i">
-          <a :href="link(i)" target="blank">
-            <img :src="img(i)">
-          </a>
-          <span class="name">{{ i }}</span>
-        </div>
+      <div class="card" v-for="i in synergie5" :key="i">
+        <a :href="link(i)" target="blank">
+          <img :src="img(i)">
+        </a>
+        <span class="name">{{ i }}</span>
       </div>
     </div>
 
