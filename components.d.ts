@@ -4,11 +4,10 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
-    Arsonic91: typeof import('./src/components/Arsonic91.vue')['default']
-    BekaD12: typeof import('./src/components/BekaD12.vue')['default']
-    Counter: typeof import('./src/components/Counter.vue')['default']
+    Adc: typeof import('./src/components/adc.vue')['default']
     Footer: typeof import('./src/components/Footer.vue')['default']
-    Synergie: typeof import('./src/components/Synergie.vue')['default']
+    Support: typeof import('./src/components/support.vue')['default']
+    Synergie: typeof import('./src/components/synergie.vue')['default']
   }
 }
 

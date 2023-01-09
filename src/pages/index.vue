@@ -1,5 +1,3 @@
 <template>
-  <div class="wrapper">
-    <h1>lol pick</h1>
-  </div>
+  <div class="wrapper"></div>
 </template>
