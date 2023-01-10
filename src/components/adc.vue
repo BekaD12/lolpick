@@ -1,8 +1,8 @@
 <script setup>
 
-const tier1 = ["Ezreal", "Sivir", "Ashe"];
-const tier2 = ["Kaisa", "Draven", "Caitlyn"];
-const tier3 = ["Seraphine", "Ziggs"];
+const tier1 = ["Ezreal", "Sivir", "Kaisa"];
+const tier2 = ["Draven", "Caitlyn", "Ashe"];
+const tier3 = ["Seraphine", "Ziggs", "Nilah"];
 
 function link(i) {
   return 'https://u.gg/lol/champions/' + i + '/build?role=adc'
@@ -17,7 +17,7 @@ function img(i) {
   <div class="wrapper">
     <span class="role">adc</span>
 
-    <span class="tier">Tier 1</span>
+    <span class="tier">Main</span>
     <div class="data">
       <div class="card" v-for="i in tier1" :key="i">
         <a :href="link(i)" target="blank">
@@ -27,7 +27,7 @@ function img(i) {
       </div>
     </div>
 
-    <span class="tier">Tier 2</span>
+    <span class="tier">Situational</span>
     <div class="data">
       <div class="card" v-for="i in tier2" :key="i">
         <a :href="link(i)" target="blank">
@@ -37,7 +37,7 @@ function img(i) {
       </div>
     </div>
 
-    <span class="tier">Tier 3</span>
+    <span class="tier">Pocket pick</span>
     <div class="data">
       <div class="card" v-for="i in tier3" :key="i">
         <a :href="link(i)" target="blank">

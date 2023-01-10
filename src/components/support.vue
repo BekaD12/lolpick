@@ -1,7 +1,7 @@
 <script setup>
 
 const tier1 = ["Thresh", "Nautilus", "Leona"];
-const tier2 = ["Karma", "Lux", "Renata"];
+const tier2 = ["Karma", "Lux", "Sona"];
 const tier3 = ["Taric", "Brand", "Senna"];
 
 function link(i) {
@@ -18,7 +18,7 @@ function img(i) {
   <div class="wrapper">
     <span class="role">support</span>
 
-    <span class="tier">Tier 1</span>
+    <span class="tier">Main</span>
     <div class="data">
       <div class="card" v-for="i in tier1" :key="i">
         <a :href="link(i)" target="blank">
@@ -29,7 +29,7 @@ function img(i) {
     </div>
 
 
-    <span class="tier">Tier 2</span>
+    <span class="tier">Situational</span>
     <div class="data">
       <div class="card" v-for="i in tier2" :key="i">
         <a :href="link(i)" target="blank">
@@ -39,7 +39,7 @@ function img(i) {
       </div>
     </div>
 
-    <span class="tier">Tier 3</span>
+    <span class="tier">Pocket pick</span>
     <div class="data">
       <div class="card" v-for="i in tier3" :key="i">
         <a :href="link(i)" target="blank">
