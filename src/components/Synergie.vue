@@ -1,9 +1,9 @@
 <script setup>
 
-const synergie1 = ["Ashe", "Thresh"];
+const synergie1 = ["Sivir", "Leona"];
 const synergie2 = ["Ezreal", "Karma"];
-const synergie3 = ["Sivir", "Leona"];
-const synergie4 = ["Kaisa", "Nautilus"];
+const synergie3 = ["Kaisa", "Nautilus"];
+const synergie4 = ["Ashe", "Thresh"];
 const synergie5 = ["Caitlyn", "Lux"];
 const synergie6 = ["Seraphine", "Senna"];
 
