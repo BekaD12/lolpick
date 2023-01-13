@@ -6,6 +6,8 @@ const synergie3 = ["Kaisa", "Nautilus"];
 const synergie4 = ["Ashe", "Thresh"];
 const synergie5 = ["Caitlyn", "Lux"];
 const synergie6 = ["Seraphine", "Senna"];
+const synergie7 = ["Draven", "Blitzcrank"];
+const synergie8 = ["Samira", "Rell"];
 
 function link(i) {
   return 'https://u.gg/lol/champions/' + i + '/build'
