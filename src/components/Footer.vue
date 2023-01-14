@@ -4,7 +4,7 @@ import { isDark, toggleDark } from '~/composables'
 
 <template>
   <nav flex justify-center p10>
-    <button class="icon-btn !outline-none m-2" @click="toggleDark()">
+    <button class="icon-btn !outline-none m-3" @click="toggleDark()">
       <div v-if="isDark" i-carbon-moon />
       <div v-else i-carbon-sun />
     </button>
