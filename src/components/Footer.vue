@@ -4,12 +4,12 @@ import { isDark, toggleDark } from '~/composables'
 
 <template>
   <nav flex justify-center p10>
-    <button class="icon-btn !outline-none m-3" @click="toggleDark()">
+    <button class="icon-btn !outline-none m-3 w-8" @click="toggleDark()">
       <div v-if="isDark" i-carbon-moon />
       <div v-else i-carbon-sun />
     </button>
 
-    <button class="icon-btn !outline-none m-3" w="8">
+    <button class="icon-btn !outline-none m-3 w-8">
       <a href="https://u.gg/lol/profile/euw1/bekad12/champion-stats?role=adc" target="_blank">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
           <g fill="none" fill-rule="evenodd">
@@ -21,7 +21,7 @@ import { isDark, toggleDark } from '~/composables'
       </a>
     </button>
 
-    <button class="icon-btn !outline-none m-3" w="8">
+    <button class="icon-btn !outline-none m-3 w-8">
       <a href="https://u.gg/lol/profile/euw1/arsoniq/champion-stats?role=support" target="_blank">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
           <path d="M8.43 5.67l1.703 8.616L8 16l-2.133-1.714L7.57 5.67 8 6.249l.43-.578zM16 3.404c-.304 2.498-4.119
