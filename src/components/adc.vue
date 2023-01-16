@@ -1,7 +1,7 @@
 <script setup>
 
-const tier1 = ["Ezreal", "Sivir", "Kaisa"];
-const tier2 = ["Draven", "Nilah", "Ashe", "Xayah"];
+const tier1 = ["Ezreal", "Sivir", "Ashe"];
+const tier2 = ["Draven", "Kaisa", "Nilah", "Xayah"];
 const tier3 = ["Seraphine", "Ziggs", "Samira", "Caitlyn"];
 
 function link(i) {

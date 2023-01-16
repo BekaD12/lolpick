@@ -1,10 +1,10 @@
 <script setup>
 
 const synergie1 = ["Sivir", "Leona"];
-const synergie2 = ["Ezreal", "Karma"];
-const synergie3 = ["Kaisa", "Nautilus"];
-const synergie4 = ["Caitlyn", "Lux"];
-const synergie5 = ["Draven", "Blitzcrank"];
+const synergie2 = ["Draven", "Thresh"];
+const synergie3 = ["Ezreal", "Karma"];
+const synergie4 = ["Kaisa", "Nautilus"];
+const synergie5 = ["Caitlyn", "Lux"];
 const synergie6 = ["Samira", "Rell"];
 const synergie7 = ["Seraphine", "Senna"];
 
