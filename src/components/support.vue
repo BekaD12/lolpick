@@ -1,6 +1,6 @@
 <script setup>
 
-const tier1 = ["Thresh", "Leona", "Nautilus"];
+const tier1 = ["Thresh", "Nautilus", "Leona"];
 const tier2 = ["Karma", "Lux", "Amumu", "Blitzcrank"];
 const tier3 = ["Taric", "Sona", "Senna", "Renata"];
 
