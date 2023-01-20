@@ -118,6 +118,16 @@ main {
     margin-left: .5rem;
 }
 
+.link-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.opgg-link,
+.ugg-link {
+    display: flex;
+}
+
 @media (max-width: 36rem) {
     .wrapper {
         padding: 0 1.5rem;
