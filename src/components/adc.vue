@@ -1,8 +1,8 @@
 <script setup>
 
 const tier1 = ["Ezreal", "Sivir", "Kaisa"];
-const tier2 = ["Ashe", "Nilah", "MissFortune"];
-const tier3 = ["Seraphine", "Ziggs", "Caitlyn"];
+const tier2 = ["Ashe", "Caitlyn", "MissFortune"];
+const tier3 = ["Seraphine", "Ziggs", "Nilah"];
 
 function link(i) {
   return 'https://u.gg/lol/champions/' + i + '/build?role=adc'
