@@ -60,10 +60,10 @@ h1 {
 
 main {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 0 auto;
     padding: 2rem;
-    width: 150rem;
+    max-width: 160rem;
 }
 
 .wrapper {
@@ -108,9 +108,9 @@ main {
 .card img {
     border-radius: var(--item-radius);
     box-shadow: var(--shadow);
+    height: 4.5rem;
     object-fit: cover;
     width: 4.5rem;
-    height: 4.5rem;
 }
 
 .card .name {
@@ -128,7 +128,9 @@ main {
     display: flex;
 }
 
-@media (max-width: 36rem) {
+
+
+@media (max-width: 80em) {
     .wrapper {
         padding: 0 1.5rem;
     }

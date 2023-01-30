@@ -6,8 +6,12 @@ declare module 'vue' {
   export interface GlobalComponents {
     Adc: typeof import('./src/components/adc.vue')['default']
     Footer: typeof import('./src/components/Footer.vue')['default']
+    Jungle: typeof import('./src/components/jungle.vue')['default']
+    Mid: typeof import('./src/components/mid.vue')['default']
     Support: typeof import('./src/components/support.vue')['default']
     Synergie: typeof import('./src/components/synergie.vue')['default']
+    Top: typeof import('./src/components/top.vue')['default']
+    'Top copy': typeof import('./src/components/top copy.vue')['default']
   }
 }
 

@@ -4,6 +4,15 @@ import { isDark, toggleDark } from '~/composables'
 
 <template>
   <nav flex justify-center p10>
+
+    <RouterLink class="icon-btn m-3 w-8" to="/" title="home">
+      <div i-carbon-home />
+    </RouterLink>
+
+    <RouterLink class="icon-btn m-3 w-8" to="/secondary" title="home">
+      <div i-carbon:data-table-reference />
+    </RouterLink>
+
     <button class="icon-btn !outline-none m-3 w-8" @click="toggleDark()">
       <div v-if="isDark" i-carbon-moon />
       <div v-else i-carbon-sun />
