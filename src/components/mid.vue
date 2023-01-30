@@ -2,7 +2,7 @@
 
 const tier1 = ["Lux", "Lissandra", "Ahri"];
 const tier2 = ["TwistedFate", "Malzahar", "Viktor"];
-const tier3 = ["Zilean", "Ziggs", "Seraphine"];
+const tier3 = ["Zilean", "Rumble", "Seraphine"];
 
 function link(i) {
   return 'https://u.gg/lol/champions/' + i + '/build?role=top'
@@ -26,7 +26,7 @@ function img(i) {
     <div class="data">
       <div class="card" v-for="i in tier1" :key="i">
         <a :href="link(i)" target="_blank">
-          <img :src="img(i)">
+          <img :src="img(i)" loading="lazy">
         </a>
         <a :href="opgg(i)" title="op.gg" target="_blank">
           <span class="name">{{ i }}</span>
@@ -42,7 +42,7 @@ function img(i) {
           <img :src="img(i)">
         </a>
         <a :href="opgg(i)" title="op.gg" target="_blank">
-          <span class="name">{{ i }}</span>
+          <span class="name">{{ i.replace("TwistedFate", "TF") }}</span>
         </a>
       </div>
     </div>

@@ -41,7 +41,7 @@ function img(i) {
           <img :src="img(i)">
         </a>
         <a :href="opgg(i)" title="op.gg" target="_blank">
-          <span class="name">{{ i }}</span>
+          <span class="name">{{ i.replace("MissFortune", "MF") }}</span>
         </a>
       </div>
     </div>

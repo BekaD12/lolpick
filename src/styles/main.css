@@ -62,8 +62,8 @@ main {
     display: flex;
     justify-content: space-evenly;
     margin: 0 auto;
-    padding: 2rem;
     max-width: 160rem;
+    padding: 2rem;
 }
 
 .wrapper {
@@ -127,8 +127,6 @@ main {
 .ugg-link {
     display: flex;
 }
-
-
 
 @media (max-width: 80em) {
     .wrapper {

@@ -1,8 +1,8 @@
 <script setup>
 
 const tier1 = ["Shen", "Zac"];
-const tier2 = ["Illaoi", "Jayce"];
-const tier3 = ["TahmKench", "Gwen"];
+const tier2 = ["Illaoi", "Quinn"];
+const tier3 = ["Gwen", "Jayce"];
 
 function link(i) {
   return 'https://u.gg/lol/champions/' + i + '/build?role=top'
