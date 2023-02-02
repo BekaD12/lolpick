@@ -99,7 +99,7 @@ main {
     border-radius: var(--item-radius);
     box-shadow: var(--shadow);
     display: grid;
-    grid-template-columns: 40% 1fr;
+    grid-template-columns: 35% 1fr;
     padding: .75rem 1.2rem;
     position: relative;
     transition: box-shadow .6s ease;

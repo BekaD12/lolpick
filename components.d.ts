@@ -11,7 +11,6 @@ declare module 'vue' {
     Support: typeof import('./src/components/support.vue')['default']
     Synergie: typeof import('./src/components/synergie.vue')['default']
     Top: typeof import('./src/components/top.vue')['default']
-    'Top copy': typeof import('./src/components/top copy.vue')['default']
   }
 }
 

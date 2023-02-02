@@ -1,9 +1,9 @@
 <script setup>
 
-const synergie1 = ["Sivir", "Thresh"];
-const synergie2 = ["Ezreal", "Karma"];
-const synergie3 = ["Kaisa", "Nautilus"];
-const synergie4 = ["Caitlyn", "Lux"];
+const synergie1 = ["Jhin", "Zyra"];
+const synergie2 = ["Caitlyn", "Lux"];
+const synergie3 = ["Sivir", "Taric"];
+const synergie4 = ["Ezreal", "Karma"];
 const synergie5 = ["Seraphine", "Senna"];
 
 function link(i) {
