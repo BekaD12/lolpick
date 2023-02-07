@@ -1,10 +1,10 @@
 <script setup>
 
-const synergie1 = ["Jhin", "Zyra"];
+const synergie1 = ["Xayah", "Rakan"];
 const synergie2 = ["Caitlyn", "Lux"];
 const synergie3 = ["Sivir", "Taric"];
 const synergie4 = ["Ezreal", "Karma"];
-const synergie5 = ["Seraphine", "Senna"];
+const synergie5 = ["Seraphine", "Ashe"];
 
 function link(i) {
   return 'https://u.gg/lol/champions/' + i + '/build'
