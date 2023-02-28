@@ -9,15 +9,6 @@ import { isDark, toggleDark } from '~/composables'
       <div i-carbon-home />
     </RouterLink>
 
-    <RouterLink class="icon-btn m-3 w-8" to="/secondary" title="home">
-      <div i-carbon:data-table-reference />
-    </RouterLink>
-
-    <button class="icon-btn !outline-none m-3 w-8" @click="toggleDark()">
-      <div v-if="isDark" i-carbon-moon />
-      <div v-else i-carbon-sun />
-    </button>
-
     <button class="icon-btn !outline-none m-3 w-8">
       <a href="https://u.gg/lol/profile/euw1/bekad12/champion-stats?role=adc" target="_blank">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
@@ -40,6 +31,17 @@ import { isDark, toggleDark } from '~/composables'
           </path>
         </svg>
       </a>
+    </button>
+
+    <button class="icon-btn !outline-none m-3 w-8">
+      <a href="https://www.leagueoflegends.com/fr-fr/news/game-updates/" target="_blank">
+        <div i-carbon:update-now></div>
+      </a>
+    </button>
+
+    <button class="icon-btn !outline-none m-3 w-8" @click="toggleDark()">
+      <div v-if="isDark" i-carbon-moon />
+      <div v-else i-carbon-sun />
     </button>
   </nav>
 </template>

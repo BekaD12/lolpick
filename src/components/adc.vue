@@ -1,8 +1,7 @@
 <script setup>
-
-const tier1 = ["Sivir", "Nilah", "Xayah"];
-const tier2 = ["Xayah", "Kaisa", "Ashe", "Caitlyn"];
-const tier3 = ["Seraphine", "Ziggs", "Ezreal"];
+const tier1 = ["Sivir", "Kaisa", "Xayah"];
+const tier2 = ["Nilah", "Draven", "Caitlyn", "MissFortune"];
+const tier3 = ["Seraphine", "Ziggs", "Senna", "Ezreal"];
 
 function link(i) {
   return 'https://u.gg/lol/champions/' + i + '/build?role=adc'
@@ -41,7 +40,7 @@ function img(i) {
           <img :src="img(i)">
         </a>
         <a :href="opgg(i)" title="op.gg" target="_blank">
-          <span class="name">{{ i }}</span>
+          <span class="name">{{ i.replace("MissFortune", "MF") }}</span>
         </a>
       </div>
     </div>
@@ -53,7 +52,7 @@ function img(i) {
           <img :src="img(i)">
         </a>
         <a :href="opgg(i)" title="op.gg" target="_blank">
-          <span class="name">{{ i.replace("MissFortune", "MF") }}</span>
+          <span class="name">{{ i }}</span>
         </a>
       </div>
     </div>

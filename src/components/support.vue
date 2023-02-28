@@ -1,15 +1,14 @@
 <script setup>
-
-const tier1 = ["Thresh", "Nautilus", "Taric"];
-const tier2 = ["Ashe", "Karma", "Lux", "Leona", "Braum"];
-const tier3 = ["Zyra", "Heimerdinger", "Rakan"];
+const engage = ["Thresh", "Taric", "Amumu", "Nautilus", "Blitzcrank"];
+const pressure = ["Ashe", "Senna", "Morgana", "Zyra"];
+const enchanter = ["Karma", "Seraphine"];
 
 function link(i) {
   return 'https://u.gg/lol/champions/' + i + '/build?role=support'
 }
 
 function opgg(i) {
-  return 'https://www.op.gg/champions/' + i + '/adc/build?region=global&tier=platinum_plus'
+  return 'https://www.op.gg/champions/' + i + '/support/build?region=global&tier=platinum_plus'
 }
 
 function img(i) {
@@ -22,9 +21,9 @@ function img(i) {
   <div class="wrapper">
     <span class="role">support</span>
 
-    <span class="tier">Main</span>
+    <span class="tier">Engage</span>
     <div class="data">
-      <div class="card" v-for="i in tier1" :key="i">
+      <div class="card" v-for="i in engage" :key="i">
         <a :href="link(i)" target="_blank">
           <img :src="img(i)">
         </a>
@@ -34,10 +33,9 @@ function img(i) {
       </div>
     </div>
 
-
-    <span class="tier">Situational</span>
+    <span class="tier">Pressure</span>
     <div class="data">
-      <div class="card" v-for="i in tier2" :key="i">
+      <div class="card" v-for="i in pressure" :key="i">
         <a :href="link(i)" target="_blank">
           <img :src="img(i)">
         </a>
@@ -47,9 +45,9 @@ function img(i) {
       </div>
     </div>
 
-    <span class="tier">Pocket pick</span>
+    <span class="tier">Enchanter</span>
     <div class="data">
-      <div class="card" v-for="i in tier3" :key="i">
+      <div class="card" v-for="i in enchanter" :key="i">
         <a :href="link(i)" target="_blank">
           <img :src="img(i)">
         </a>

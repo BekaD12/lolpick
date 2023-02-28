@@ -1,10 +1,10 @@
 <script setup>
-
-const synergie1 = ["Xayah", "Rakan"];
-const synergie2 = ["Caitlyn", "Lux"];
-const synergie3 = ["Sivir", "Taric"];
-const synergie4 = ["Ezreal", "Karma"];
-const synergie5 = ["Seraphine", "Ashe"];
+const synergie0 = ["Draven", "Thresh"];
+const synergie1 = ["Sivir", "Taric"];
+const synergie2 = ["Ezreal", "Karma"];
+const synergie3 = ["Caitlyn", "Lux"];
+const synergie4 = ["Seraphine", "Senna"];
+const synergie5 = ["Xayah", "Rakan"];
 
 function link(i) {
   return 'https://u.gg/lol/champions/' + i + '/build'
@@ -18,6 +18,15 @@ function img(i) {
 <template>
   <div class="wrapper">
     <span class="role">synergie</span>
+
+    <div class="data">
+      <div class="card" v-for="i in synergie0" :key="i">
+        <a :href="link(i)" target="_blank">
+          <img :src="img(i)">
+        </a>
+        <span class="name">{{ i }}</span>
+      </div>
+    </div>
 
     <div class="data">
       <div class="card" v-for="i in synergie1" :key="i">
