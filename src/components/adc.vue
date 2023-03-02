@@ -1,7 +1,8 @@
 <script setup>
-const tier1 = ["Sivir", "Kaisa", "Xayah"];
+const navori = ["Sivir", "Kaisa", "Xayah"];
 const tier2 = ["Draven", "Nilah", "Caitlyn", "MissFortune"];
-const tier3 = ["Seraphine", "Ziggs", "Senna", "Ezreal"];
+const apc = ["Seraphine", "Ziggs"];
+const lethality = ["Varus"];
 
 function link(i) {
   return 'https://u.gg/lol/champions/' + i + '/build?role=adc'
@@ -20,9 +21,9 @@ function img(i) {
   <div class="wrapper">
     <span class="role">adc</span>
 
-    <span class="tier">Main</span>
+    <span class="tier">Navori Abuser</span>
     <div class="data">
-      <div class="card" v-for="i in tier1" :key="i">
+      <div class="card" v-for="i in navori" :key="i">
         <a :href="link(i)" target="_blank" title="u.gg">
           <img :src="img(i)">
         </a>
@@ -45,9 +46,21 @@ function img(i) {
       </div>
     </div>
 
-    <span class="tier">Pocket pick</span>
+    <span class="tier">APC</span>
     <div class="data">
-      <div class="card" v-for="i in tier3" :key="i">
+      <div class="card" v-for="i in apc" :key="i">
+        <a :href="link(i)" target="_blank">
+          <img :src="img(i)">
+        </a>
+        <a :href="opgg(i)" title="op.gg" target="_blank">
+          <span class="name">{{ i }}</span>
+        </a>
+      </div>
+    </div>
+
+    <span class="tier">Lethality</span>
+    <div class="data">
+      <div class="card" v-for="i in lethality" :key="i">
         <a :href="link(i)" target="_blank">
           <img :src="img(i)">
         </a>
