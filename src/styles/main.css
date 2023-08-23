@@ -85,7 +85,7 @@ main {
 
 .data {
     display: grid;
-    gap: 1rem;
+    gap: 1.5rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     justify-content: center;
@@ -100,7 +100,7 @@ main {
     box-shadow: var(--shadow);
     display: grid;
     grid-template-columns: auto 1fr 1fr;
-    padding: .75rem 1.2rem;
+    padding: 1rem 1.2rem;
     position: relative;
     transition: box-shadow .6s ease;
 }
