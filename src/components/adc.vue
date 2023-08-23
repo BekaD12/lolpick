@@ -1,19 +1,19 @@
 <script setup>
-const navori = ["Sivir", "Kaisa", "Xayah"];
-const tier2 = ["Draven", "Nilah", "Caitlyn", "MissFortune"];
-const apc = ["Seraphine", "Ziggs"];
-const lethality = ["Varus"];
+const navori = ['Sivir', 'Ezreal', 'Kaisa', 'Ashe']
+const tier2 = ['Draven', 'Nilah', 'Caitlyn', 'Xayah']
+const apc = ['Seraphine', 'Ziggs']
+const lethality = ['Varus', 'MissFortune']
 
-function link(i) {
-  return 'https://u.gg/lol/champions/' + i + '/build?role=adc'
+function ugg(i) {
+  return `https://u.gg/lol/champions/${i}/build?role=adc`
 }
 
 function opgg(i) {
-  return 'https://www.op.gg/champions/' + i + '/adc/build?region=global&tier=platinum_plus'
+  return `https://www.op.gg/champions/${i}/adc/build?region=global&tier=platinum_plus`
 }
 
 function img(i) {
-  return 'https://static.bigbrain.gg/assets/lol/riot_static/12.23.1/img/champion/' + i + '.webp'
+  return `https://static.bigbrain.gg/assets/lol/riot_static/12.23.1/img/champion/${i}.webp`
 }
 </script>
 
@@ -21,35 +21,52 @@ function img(i) {
   <div class="wrapper">
     <span class="role">adc</span>
 
-    <span class="tier">Navori Abuser</span>
+    <span class="tier">Main</span>
     <div class="data">
-      <div class="card" v-for="i in navori" :key="i">
-        <a :href="link(i)" target="_blank" title="u.gg">
+      <div v-for="i in navori" :key="i" class="card">
+        <img :src="img(i)">
+        <span class="name">{{ i }}</span>
+
+        <div class="link-container">
+          <a :href="ugg(i)" title="u.gg" target="_blank">
+            <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 27"><path fill-rule="evenodd" clip-rule="evenodd" d="M25.254 25.905a1.958 1.958 0 01-.59-1.43c0-.558.196-1.034.59-1.431a1.941 1.941 0 011.434-.596c.562 0 1.04.198 1.434.596.393.397.59.873.59 1.43 0 .557-.197 1.034-.59 1.43a1.945 1.945 0 01-1.434.596c-.563 0-1.04-.199-1.434-.595z" fill="#3273FA" /><path fill-rule="evenodd" clip-rule="evenodd" d="M54.214 10.069V9.96c0-4.408-2.248-6.611-6.744-6.611h-5.973c-4.495 0-6.743 2.203-6.743 6.61v9.929c0 4.408 2.248 6.611 6.743 6.611h5.973c4.496 0 6.744-2.203 6.744-6.611v-5.43h-8.998l-1.56 3.439h6.704v1.99c0 2.142-.963 3.212-2.89 3.212h-5.973c-1.926 0-2.89-1.07-2.89-3.211V9.96c0-2.14.964-3.211 2.89-3.211h5.973c1.927 0 2.89 1.07 2.89 3.21v1.809l3.854-1.7zM80 10.069V9.96c0-4.408-2.249-6.611-6.744-6.611h-5.973c-4.496 0-6.744 2.203-6.744 6.61v9.929c0 4.408 2.248 6.611 6.744 6.611h5.973c4.495 0 6.743-2.203 6.743-6.611v-5.43h-8.997l-1.56 3.439h6.704v1.99c0 2.142-.963 3.212-2.89 3.212h-5.973c-1.927 0-2.89-1.07-2.89-3.211V9.96c0-2.14.963-3.211 2.89-3.211h5.973c1.927 0 2.89 1.07 2.89 3.21v1.809l3.853-1.7zM15.226 2.696v18.097c-1.806 1.02-3.7 1.536-5.632 1.536-1.932 0-3.826-.516-5.632-1.536V2.696L0 4.448v18.519l.883.59c2.674 1.788 5.686 2.733 8.711 2.733 3.025 0 6.037-.945 8.712-2.733l.882-.59V4.448l-3.962-1.752z" fill="#fff" /><path fill-rule="evenodd" clip-rule="evenodd" d="M9.493 0L7.512.876v12.966a7.164 7.164 0 001.98.284c.664 0 1.326-.095 1.982-.284V.876L9.493 0z" fill="#3273FA" /></svg>
+          </a>
+
+          <a :href="opgg(i)" target="_blank" title="op.gg">
+            <svg viewBox="0 0 338 83" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g id="desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="index_black_asset" transform="translate(-1320.000000, -1206.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                  <g id="img_opgglogo" transform="translate(1320.000000, 1205.000000)">
+                    <path id="Fill-1" d="M41.0445473,64.2304516 C29.1526673,64.2304516 19.4777351,54.458781 19.4777351,42.4467811 C19.4777351,30.4357693 29.1526673,20.6631105 41.0445473,20.6631105 C52.9334922,20.6631105 62.6084244,30.4357693 62.6084244,42.4467811 C62.6084244,54.458781 52.9334922,64.2304516 41.0445473,64.2304516 M41.0455257,0.988334115 C18.4132871,0.988334115 -0.000293505881,19.5859341 -0.000293505881,42.4457928 C-0.000293505881,65.307628 18.4132871,83.9062162 41.0455257,83.9062162 C63.6748291,83.9062162 82.0864531,65.307628 82.0864531,42.4457928 C82.0864531,19.5859341 63.6748291,0.988334115 41.0455257,0.988334115" />
+                    <path id="Fill-4" d="M130.635554,45.0264705 L108.325194,45.0264705 L108.325194,20.1683999 L130.635554,20.1683999 C138.333235,20.1683999 140.680304,27.4882587 140.680304,32.5974352 C140.680304,37.8647293 138.333235,45.0264705 130.635554,45.0264705 M160.066368,32.5974352 C160.066368,14.7726353 148.012081,1.00552941 130.726541,1.00552941 L89.9096567,1.00552941 L89.9096567,83.8364468 L108.322259,83.8364468 L108.325194,64.189341 L130.726541,64.189341 C147.391805,64.189341 160.066368,50.5151293 160.066368,32.5974352" />
+                    <path id="Fill-6" d="M251.126763,37.4563905 L214.564735,37.4563905 L214.564735,52.2868375 L231.320008,52.2868375 C229.984556,58.8240139 223.172284,64.683261 212.901535,64.683261 C200.752348,64.683261 190.86707,54.6991198 190.86707,42.4291905 C190.86707,30.1553081 200.752348,20.5417552 212.901535,20.5417552 C218.861661,20.5417552 224.449035,22.5547905 228.640299,26.8842493 L229.570713,27.8467905 L230.679187,27.1006729 L243.940761,18.1680141 L245.434706,17.1619905 L244.278292,15.7745082 C236.462231,6.38824939 225.023328,1.00533176 212.901535,1.00533176 C190.291799,1.00533176 171.895829,19.5881082 171.895829,42.4291905 C171.895829,65.2682963 190.291799,83.8471198 212.901535,83.8471198 C233.027234,83.8471198 247.462831,72.1444374 250.572037,53.3057081 C251.339066,48.6491434 251.54452,46.2862728 251.408529,42.4291905 C251.328304,40.1305552 251.215793,38.4900846 251.126763,37.4563905" />
+                    <path id="Fill-8" d="M337.241878,37.4669646 L300.678872,37.4669646 L300.678872,52.2964234 L317.434144,52.2964234 C316.100649,58.8335998 309.286421,64.6938351 299.014693,64.6938351 C286.866485,64.6938351 276.981207,54.709694 276.981207,42.4387763 C276.981207,30.164894 286.866485,20.5513411 299.014693,20.5513411 C304.973841,20.5513411 310.561215,22.5653646 314.755414,26.8938352 L315.685827,27.8563764 L316.794301,27.1102587 L330.054897,18.1785882 L331.54982,17.1715764 L330.393407,15.7840941 C322.57441,6.39882351 311.137465,1.01590588 299.014693,1.01590588 C276.403979,1.01590588 258.010943,19.5976941 258.010943,42.4387763 C258.010943,65.2788704 276.403979,83.8576939 299.014693,83.8576939 C319.142348,83.8576939 333.576968,72.1550116 336.686173,53.315294 C337.45418,48.6597175 337.658656,46.2958587 337.522665,42.4397646 C337.44244,40.1401411 337.32993,38.5006587 337.241878,37.4669646" />
+                    <path id="Fill-10" d="M160.064411,67.0291339 C155.477892,67.0291339 151.745476,70.7992516 151.745476,75.4340751 C151.745476,80.0669221 155.477892,83.8370398 160.064411,83.8370398 C164.652886,83.8370398 168.386281,80.0669221 168.386281,75.4340751 C168.386281,70.7992516 164.652886,67.0291339 160.064411,67.0291339" />
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <span class="tier">Situational</span>
+    <div class="data">
+      <div v-for="i in tier2" :key="i" class="card">
+        <a :href="ugg(i)" target="_blank">
           <img :src="img(i)">
         </a>
-
         <a :href="opgg(i)" title="op.gg" target="_blank">
           <span class="name">{{ i }}</span>
         </a>
       </div>
     </div>
 
-    <span class="tier">Situational</span>
-    <div class="data">
-      <div class="card" v-for="i in tier2" :key="i">
-        <a :href="link(i)" target="_blank">
-          <img :src="img(i)">
-        </a>
-        <a :href="opgg(i)" title="op.gg" target="_blank">
-          <span class="name">{{ i.replace("MissFortune", "MF") }}</span>
-        </a>
-      </div>
-    </div>
-
     <span class="tier">APC</span>
     <div class="data">
-      <div class="card" v-for="i in apc" :key="i">
-        <a :href="link(i)" target="_blank">
+      <div v-for="i in apc" :key="i" class="card">
+        <a :href="ugg(i)" target="_blank">
           <img :src="img(i)">
         </a>
         <a :href="opgg(i)" title="op.gg" target="_blank">
@@ -60,15 +77,14 @@ function img(i) {
 
     <span class="tier">Lethality</span>
     <div class="data">
-      <div class="card" v-for="i in lethality" :key="i">
-        <a :href="link(i)" target="_blank">
+      <div v-for="i in lethality" :key="i" class="card">
+        <a :href="ugg(i)" target="_blank">
           <img :src="img(i)">
         </a>
         <a :href="opgg(i)" title="op.gg" target="_blank">
-          <span class="name">{{ i }}</span>
+          <span class="name">{{ i.replace("MissFortune", "MF") }}</span>
         </a>
       </div>
     </div>
-
   </div>
 </template>

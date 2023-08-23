@@ -1,17 +1,17 @@
 <script setup>
-const synergie0 = ["Draven", "Thresh"];
-const synergie1 = ["Sivir", "Taric"];
-const synergie2 = ["Ezreal", "Karma"];
-const synergie3 = ["Caitlyn", "Lux"];
-const synergie4 = ["Seraphine", "Senna"];
-const synergie5 = ["Xayah", "Blitzcrank"];
+const synergie0 = ['Draven', 'Thresh']
+const synergie1 = ['Sivir', 'Taric']
+const synergie2 = ['Ezreal', 'Karma']
+const synergie3 = ['Caitlyn', 'Lux']
+const synergie4 = ['Seraphine', 'Senna']
+const synergie5 = ['Xayah', 'Blitzcrank']
 
 function link(i) {
-  return 'https://u.gg/lol/champions/' + i + '/build'
+  return `https://u.gg/lol/champions/${i}/build`
 }
 
 function img(i) {
-  return 'https://static.bigbrain.gg/assets/lol/riot_static/12.23.1/img/champion/' + i + '.webp'
+  return `https://static.bigbrain.gg/assets/lol/riot_static/12.23.1/img/champion/${i}.webp`
 }
 </script>
 
@@ -20,7 +20,7 @@ function img(i) {
     <span class="role">synergie</span>
 
     <div class="data">
-      <div class="card" v-for="i in synergie0" :key="i">
+      <div v-for="i in synergie0" :key="i" class="card">
         <a :href="link(i)" target="_blank">
           <img :src="img(i)">
         </a>
@@ -29,7 +29,7 @@ function img(i) {
     </div>
 
     <div class="data">
-      <div class="card" v-for="i in synergie1" :key="i">
+      <div v-for="i in synergie1" :key="i" class="card">
         <a :href="link(i)" target="_blank">
           <img :src="img(i)">
         </a>
@@ -38,7 +38,7 @@ function img(i) {
     </div>
 
     <div class="data">
-      <div class="card" v-for="i in synergie2" :key="i">
+      <div v-for="i in synergie2" :key="i" class="card">
         <a :href="link(i)" target="_blank">
           <img :src="img(i)">
         </a>
@@ -47,7 +47,7 @@ function img(i) {
     </div>
 
     <div class="data">
-      <div class="card" v-for="i in synergie3" :key="i">
+      <div v-for="i in synergie3" :key="i" class="card">
         <a :href="link(i)" target="_blank">
           <img :src="img(i)">
         </a>
@@ -56,7 +56,7 @@ function img(i) {
     </div>
 
     <div class="data">
-      <div class="card" v-for="i in synergie4" :key="i">
+      <div v-for="i in synergie4" :key="i" class="card">
         <a :href="link(i)" target="_blank">
           <img :src="img(i)">
         </a>
@@ -65,13 +65,12 @@ function img(i) {
     </div>
 
     <div class="data">
-      <div class="card" v-for="i in synergie5" :key="i">
+      <div v-for="i in synergie5" :key="i" class="card">
         <a :href="link(i)" target="_blank">
           <img :src="img(i)">
         </a>
         <span class="name">{{ i }}</span>
       </div>
     </div>
-
   </div>
 </template>
