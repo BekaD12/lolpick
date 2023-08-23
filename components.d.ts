@@ -15,9 +15,6 @@ declare module 'vue' {
     RouterView: typeof import('vue-router')['RouterView']
     Support: typeof import('./src/components/support.vue')['default']
     Synergie: typeof import('./src/components/synergie.vue')['default']
-    TheCounter: typeof import('./src/components/TheCounter.vue')['default']
-    TheFooter: typeof import('./src/components/TheFooter.vue')['default']
-    TheInput: typeof import('./src/components/TheInput.vue')['default']
     Top: typeof import('./src/components/top.vue')['default']
   }
 }
