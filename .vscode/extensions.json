@@ -3,7 +3,9 @@
     "antfu.vite",
     "antfu.iconify",
     "antfu.unocss",
-    "johnsoncodehk.volar",
-    "dbaeumer.vscode-eslint"
+    "antfu.goto-alias",
+    "vue.volar",
+    "dbaeumer.vscode-eslint",
+    "EditorConfig.EditorConfig"
   ]
 }
