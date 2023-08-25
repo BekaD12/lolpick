@@ -1,76 +1,37 @@
 <script setup>
-const synergie0 = ['Draven', 'Thresh']
-const synergie1 = ['Sivir', 'Taric']
-const synergie2 = ['Ezreal', 'Karma']
-const synergie3 = ['Caitlyn', 'Lux']
-const synergie4 = ['Seraphine', 'Senna']
-const synergie5 = ['Xayah', 'Blitzcrank']
+const synergies = [
+  ['Draven', 'Thresh'],
+  ['Sivir', 'Taric'],
+  ['Ezreal', 'Karma'],
+  ['Caitlyn', 'Lux'],
+  ['Seraphine', 'Senna'],
+]
 
-function link(i) {
-  return `https://u.gg/lol/champions/${i}/build`
+function link(champion) {
+  return `https://u.gg/lol/champions/${champion}/build`
 }
 
-function img(i) {
-  return `https://static.bigbrain.gg/assets/lol/riot_static/12.23.1/img/champion/${i}.webp`
+function img(champion) {
+  return `https://static.bigbrain.gg/assets/lol/riot_static/12.23.1/img/champion/${champion}.webp`
 }
 </script>
 
 <template>
   <div class="wrapper">
     <span class="role">synergie</span>
-
-    <div class="data">
-      <div v-for="i in synergie0" :key="i" class="card">
-        <a :href="link(i)" target="_blank">
-          <img :src="img(i)">
+    <div v-for="(synergy, index) in synergies" :key="index" class="data">
+      <div v-for="champion in synergy" :key="champion" class="card">
+        <a :href="link(champion)" target="_blank">
+          <img :src="img(champion)">
         </a>
-        <span class="name">{{ i }}</span>
-      </div>
-    </div>
-
-    <div class="data">
-      <div v-for="i in synergie1" :key="i" class="card">
-        <a :href="link(i)" target="_blank">
-          <img :src="img(i)">
-        </a>
-        <span class="name">{{ i }}</span>
-      </div>
-    </div>
-
-    <div class="data">
-      <div v-for="i in synergie2" :key="i" class="card">
-        <a :href="link(i)" target="_blank">
-          <img :src="img(i)">
-        </a>
-        <span class="name">{{ i }}</span>
-      </div>
-    </div>
-
-    <div class="data">
-      <div v-for="i in synergie3" :key="i" class="card">
-        <a :href="link(i)" target="_blank">
-          <img :src="img(i)">
-        </a>
-        <span class="name">{{ i }}</span>
-      </div>
-    </div>
-
-    <div class="data">
-      <div v-for="i in synergie4" :key="i" class="card">
-        <a :href="link(i)" target="_blank">
-          <img :src="img(i)">
-        </a>
-        <span class="name">{{ i }}</span>
-      </div>
-    </div>
-
-    <div class="data">
-      <div v-for="i in synergie5" :key="i" class="card">
-        <a :href="link(i)" target="_blank">
-          <img :src="img(i)">
-        </a>
-        <span class="name">{{ i }}</span>
+        <span class="name">{{ champion }}</span>
       </div>
     </div>
   </div>
 </template>
+
+<style scoped>
+.role{
+  margin-bottom: 5rem;
+}
+</style>

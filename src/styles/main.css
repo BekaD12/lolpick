@@ -114,6 +114,7 @@ main {
 }
 
 .card .name {
+  font-size: 1.6rem;
   display: block;
   margin-left: .5rem;
 }
@@ -129,7 +130,9 @@ main {
 }
 
 .card svg {
-  width: 5rem;
+  width: 6rem;
+  padding: 1rem;
+  margin: -1rem;
 }
 
 .card svg path {

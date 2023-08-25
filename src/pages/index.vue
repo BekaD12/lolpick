@@ -1,5 +1,5 @@
 <template>
-    <adc />
-    <support />
-    <synergie />
+  <adc />
+  <support />
+  <synergie />
 </template>

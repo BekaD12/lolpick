@@ -8,6 +8,7 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     Adc: typeof import('./src/components/adc.vue')['default']
+    ChampionCard: typeof import('./src/components/ChampionCard.vue')['default']
     Footer: typeof import('./src/components/Footer.vue')['default']
     Jungle: typeof import('./src/components/jungle.vue')['default']
     Mid: typeof import('./src/components/mid.vue')['default']
@@ -15,6 +16,8 @@ declare module 'vue' {
     RouterView: typeof import('vue-router')['RouterView']
     Support: typeof import('./src/components/support.vue')['default']
     Synergie: typeof import('./src/components/synergie.vue')['default']
+    Test: typeof import('./src/components/test.vue')['default']
     Top: typeof import('./src/components/top.vue')['default']
+    Ugg: typeof import('./src/components/ugg.vue')['default']
   }
 }
