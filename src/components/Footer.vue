@@ -9,6 +9,17 @@ import { isDark, toggleDark } from '~/composables'
     </RouterLink>
 
     <button class="m-4 w-8 icon-btn !outline-none">
+      <a href="https://www.leagueoflegends.com/fr-fr/news/game-updates/" target="_blank">
+        <div i-carbon:update-now />
+      </a>
+    </button>
+
+    <button class="m-4 w-8 icon-btn !outline-none" @click="toggleDark()">
+      <div v-if="isDark" i-carbon-moon />
+      <div v-else i-carbon-sun />
+    </button>
+
+    <button class="m-4 w-7 icon-btn !outline-none">
       <a href="https://u.gg/lol/profile/euw1/bekad12/champion-stats?role=adc" target="_blank">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
           <g fill="none" fill-rule="evenodd">
@@ -20,7 +31,7 @@ import { isDark, toggleDark } from '~/composables'
       </a>
     </button>
 
-    <button class="m-4 w-8 icon-btn !outline-none">
+    <button class="m-4 w-7 icon-btn !outline-none">
       <a href="https://u.gg/lol/profile/euw1/arsoniq/champion-stats?role=support" target="_blank">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
           <path
@@ -31,17 +42,6 @@ import { isDark, toggleDark } from '~/composables'
           />
         </svg>
       </a>
-    </button>
-
-    <button class="m-4 w-8 icon-btn !outline-none">
-      <a href="https://www.leagueoflegends.com/fr-fr/news/game-updates/" target="_blank">
-        <div i-carbon:update-now />
-      </a>
-    </button>
-
-    <button class="m-4 w-8 icon-btn !outline-none" @click="toggleDark()">
-      <div v-if="isDark" i-carbon-moon />
-      <div v-else i-carbon-sun />
     </button>
   </nav>
 </template>
