@@ -1,5 +1,9 @@
 <h1 align="center">lolpick</h1>
-  
+
+<p align="center">
+  Lolpick, a helper app for our botlane draft in League of Legends
+</p>
+
 [Live Preview](https://pick.netlify.fr/)
 
 ## Install
