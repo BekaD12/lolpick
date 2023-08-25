@@ -8,7 +8,6 @@ const champions = [
   { name: 'Taric', tier: 'Situational' },
   { name: 'Xerath', tier: 'Pressure' },
   { name: 'Senna', tier: 'Pressure' },
-  { name: 'Milio', tier: 'Enchanter' },
   { name: 'Karma', tier: 'Enchanter' },
 ]
 
