@@ -1,6 +1,6 @@
 <script setup>
 const engage = ['Thresh', 'Taric', 'Amumu', 'Nautilus', 'Blitzcrank']
-const pressure = ['Ashe', 'Senna', 'Morgana', 'Zyra', 'Lux']
+const pressure = ['Senna', 'Zyra', 'Lux']
 const enchanter = ['Karma', 'Seraphine']
 
 function link(i) {
