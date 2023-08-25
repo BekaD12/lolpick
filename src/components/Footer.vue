@@ -1,22 +1,17 @@
 <script setup lang="ts">
-import { isDark, toggleDark } from '~/composables'
 </script>
 
 <template>
   <nav flex justify-center p10>
-    <RouterLink class="m-4 w-8 icon-btn" to="/" title="home">
-      <div i-carbon-home />
-    </RouterLink>
+    <button class="m-4 w-8 icon-btn !outline-none" @click="toggleDark()">
+      <div v-if="isDark" i-carbon-moon />
+      <div v-else i-carbon-sun />
+    </button>
 
     <button class="m-4 w-8 icon-btn !outline-none">
       <a href="https://www.leagueoflegends.com/fr-fr/news/game-updates/" target="_blank">
         <div i-carbon:update-now />
       </a>
-    </button>
-
-    <button class="m-4 w-8 icon-btn !outline-none" @click="toggleDark()">
-      <div v-if="isDark" i-carbon-moon />
-      <div v-else i-carbon-sun />
     </button>
 
     <button class="m-4 w-7 icon-btn !outline-none">
