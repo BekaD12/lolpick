@@ -23,8 +23,8 @@ const uggBaseUrl = 'https://u.gg/lol/champions/'
 const opggBaseUrl = 'https://www.op.gg/champions/'
 
 const generateImageUrl = name => `${imgBaseUrl}${name}.webp`
-const generateUggUrl = name => `${uggBaseUrl}${name}/build?role=adc`
-const generateOpggUrl = name => `${opggBaseUrl}${name}/adc/build?region=global&tier=platinum_plus`
+const generateUggUrl = name => `${uggBaseUrl}${name}/build?role=suppport`
+const generateOpggUrl = name => `${opggBaseUrl}${name}/suppport/build?region=global&tier=platinum_plus`
 
 const tiersWithChampions = tiers.map(tier => ({
   ...tier,
