@@ -21,7 +21,7 @@ function img(champion) {
     <span class="role">synergie</span>
     <div v-for="(synergy, index) in synergies" :key="index" class="data">
       <div v-for="champion in synergy" :key="champion" class="card">
-        <img :src="img(champion)">
+        <img :src="img(champion)" :alt="`${champion} Icon`">
         <span class="name">{{ champion }}</span>
       </div>
     </div>

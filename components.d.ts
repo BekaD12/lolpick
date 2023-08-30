@@ -7,17 +7,23 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
-    Adc: typeof import('./src/components/adc.vue')['default']
+    Adc: typeof import('./src/components/Adc.vue')['default']
     ChampionCard: typeof import('./src/components/ChampionCard.vue')['default']
     Footer: typeof import('./src/components/Footer.vue')['default']
     Jungle: typeof import('./src/components/jungle.vue')['default']
+    Leaderboard: typeof import('./src/components/Leaderboard.vue')['default']
+    Match: typeof import('./src/components/Match.vue')['default']
+    MatchHistoryTab: typeof import('./src/components/MatchHistoryTab.vue')['default']
     Mid: typeof import('./src/components/mid.vue')['default']
+    Navbar: typeof import('./src/components/Navbar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    Support: typeof import('./src/components/support.vue')['default']
-    Synergie: typeof import('./src/components/synergie.vue')['default']
+    Sidebar: typeof import('./src/components/Sidebar.vue')['default']
+    Support: typeof import('./src/components/Support.vue')['default']
+    Synergie: typeof import('./src/components/Synergie.vue')['default']
     Test: typeof import('./src/components/test.vue')['default']
     Top: typeof import('./src/components/top.vue')['default']
+    Topbar: typeof import('./src/components/Topbar.vue')['default']
     Ugg: typeof import('./src/components/ugg.vue')['default']
   }
 }
