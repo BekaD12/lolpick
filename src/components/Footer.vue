@@ -15,7 +15,7 @@
     </button>
 
     <button class="m-4 w-7 icon-btn !outline-none">
-      <a href="https://u.gg/lol/adc-tier-list" target="_blank" title="u.gg ADC tier list">
+      <a href="https://u.gg/lol/adc-tier-list" target="_blank" title="ADC tier list u.gg">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
           <g fill="none" fill-rule="evenodd">
             <path fill="#7878B5" d="M10.133 5.867H5.867v4.266h4.266z" />
@@ -27,7 +27,7 @@
     </button>
 
     <button class="m-4 w-7 icon-btn !outline-none">
-      <a href="https://u.gg/lol/support-tier-list" target="_blank" title="u.gg Support tier list">
+      <a href="https://u.gg/lol/support-tier-list" target="_blank" title="Support tier list u.gg">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
           <path
             d="M8.43 5.67l1.703 8.616L8 16l-2.133-1.714L7.57 5.67 8 6.249l.43-.578zM16 3.404c-.304 2.498-4.119
