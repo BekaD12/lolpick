@@ -2,9 +2,9 @@
 const synergies = [
   ['Draven', 'Thresh'],
   ['Sivir', 'Taric'],
+  ['Seraphine', 'Senna'],
   ['Ezreal', 'Karma'],
   ['Caitlyn', 'Lux'],
-  ['Seraphine', 'Senna'],
 ]
 
 function link(champion) {

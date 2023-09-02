@@ -11,6 +11,7 @@ const champions = [
   { name: 'Senna', tier: 'Pressure' },
   { name: 'Zyra', tier: 'Pressure' },
   { name: 'Karma', tier: 'Enchanter' },
+  { name: 'Renata', tier: 'Enchanter' },
 ]
 
 const tiers = [
