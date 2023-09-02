@@ -7,10 +7,6 @@ const synergies = [
   ['Caitlyn', 'Xerath'],
 ]
 
-function link(champion) {
-  return `https://u.gg/lol/champions/${champion}/build`
-}
-
 function img(champion) {
   return `https://static.bigbrain.gg/assets/lol/riot_static/12.23.1/img/champion/${champion}.webp`
 }
