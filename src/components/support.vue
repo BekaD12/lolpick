@@ -6,8 +6,10 @@ const champions = [
   { name: 'Blitzcrank', tier: 'Main' },
   { name: 'Rell', tier: 'Situational' },
   { name: 'Taric', tier: 'Situational' },
+  { name: 'Alistar', tier: 'Situational' },
   { name: 'Xerath', tier: 'Pressure' },
   { name: 'Senna', tier: 'Pressure' },
+  { name: 'Zyra', tier: 'Pressure' },
   { name: 'Karma', tier: 'Enchanter' },
 ]
 
