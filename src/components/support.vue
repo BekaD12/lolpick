@@ -1,43 +1,40 @@
 <script setup>
 const champions = [
-  { name: 'Thresh', tier: 'Main' },
-  { name: 'Leona', tier: 'Main' },
-  { name: 'Nautilus', tier: 'Main' },
-  { name: 'Blitzcrank', tier: 'Main' },
-  { name: 'Rell', tier: 'Situational' },
-  { name: 'Taric', tier: 'Situational' },
-  { name: 'Alistar', tier: 'Situational' },
+  { name: 'Maokai', tier: 'Main' },
+  { name: 'Zyra', tier: 'Main' },
+  { name: 'Leona', tier: 'Situational' },
+  { name: 'Blitzcrank', tier: 'Situational' },
+  { name: 'Lux', tier: 'Pressure' },
   { name: 'Xerath', tier: 'Pressure' },
   { name: 'Senna', tier: 'Pressure' },
-  { name: 'Zyra', tier: 'Pressure' },
+  { name: 'Brand', tier: 'Pressure' },
   { name: 'Karma', tier: 'Enchanter' },
   { name: 'Renata', tier: 'Enchanter' },
 ]
 
-const tiers = [
-  { title: 'Main', champions: [] },
-  { title: 'Situational', champions: [] },
-  { title: 'Pressure', champions: [] },
-  { title: 'Enchanter', champions: [] },
-]
-
-const imgBaseUrl = 'https://static.bigbrain.gg/assets/lol/riot_static/12.23.1/img/champion/'
+const imgBaseUrl = 'https://opgg-static.akamaized.net/meta/images/lol/14.3.1/champion/'
 const uggBaseUrl = 'https://u.gg/lol/champions/'
 const opggBaseUrl = 'https://www.op.gg/champions/'
 
-const generateImageUrl = name => `${imgBaseUrl}${name}.webp`
-const generateUggUrl = name => `${uggBaseUrl}${name}/build?role=suppport`
-const generateOpggUrl = name => `${opggBaseUrl}${name}/suppport/build?region=global&tier=platinum_plus`
+const generateImageUrl = name => `${imgBaseUrl}${name}.png`
+const generateUggUrl = name => `${uggBaseUrl}${name}/build?role=adc`
+const generateOpggUrl = name => `${opggBaseUrl}${name}/adc/build?`
 
-const tiersWithChampions = tiers.map(tier => ({
-  ...tier,
-  champions: champions.filter(champion => champion.tier === tier.title)
-    .map(champion => ({
-      name: champion.name,
-      image: generateImageUrl(champion.name),
-      uggUrl: generateUggUrl(champion.name),
-      opggUrl: generateOpggUrl(champion.name),
-    })),
+const groupedChampions = champions.reduce((acc, champion) => {
+  acc[champion.tier] ??= []
+  acc[champion.tier].push({
+    name: champion.name,
+    displayName: champion.displayName || champion.name,
+    image: generateImageUrl(champion.name),
+    uggUrl: generateUggUrl(champion.name),
+    opggUrl: generateOpggUrl(champion.name),
+  })
+  return acc
+}, {})
+
+const tiersWithChampions = Object.entries(groupedChampions).map(([tier, champions]) => ({
+  title: tier,
+  champions,
 }))
 </script>
 
