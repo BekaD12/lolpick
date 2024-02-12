@@ -1,10 +1,8 @@
 <script setup>
 const synergies = [
-  ['Draven', 'Thresh'],
-  ['Sivir', 'Taric'],
   ['Seraphine', 'Senna'],
   ['Ezreal', 'Karma'],
-  ['Caitlyn', 'Xerath'],
+  ['Caitlyn', 'Lux'],
 ]
 
 function img(champion) {
